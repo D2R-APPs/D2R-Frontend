@@ -33,6 +33,10 @@ const RegisterPage = () => {
         <h2>Register</h2>
         <form onSubmit={handleRegister}>
           <div className="form-group">
+          <div className="auth-page">
+  <div className="auth-container">
+    </div>
+</div>
             <label>Name</label>
             <input type="text" placeholder="Name" name="name" value={name} onChange={handleChange} required />
           </div>
@@ -51,8 +55,6 @@ const RegisterPage = () => {
               <option value="restaurant">Restaurant</option>
             </select>
           </div>
-     <div className="auth-page">
-      <div className="auth-form-container">
           <button type="submit" className="form-button">Register</button>
         </form>
         <p className="form-link">
@@ -62,5 +64,4 @@ const RegisterPage = () => {
     </div>
   );
 };
-
 export default RegisterPage;
