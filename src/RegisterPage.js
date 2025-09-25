@@ -21,7 +21,7 @@ const RegisterPage = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/register', formData);
+      await axios.post('https://d2r-backend-83gd.onrender.com/api/auth/register', formData);
       alert('Registration successful! Please log in.');
       navigate('/login');
     } catch (err) {
