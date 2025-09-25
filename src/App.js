@@ -7,7 +7,7 @@ import RestaurantDashboard from './RestaurantDashboard';
 import HomePage from './HomePage';
 import Navbar from './Navbar';
 import './App.css';
-
+import FarmerHistory from './FarmerHistory';
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [userRole, setUserRole] = useState(null);
@@ -46,7 +46,13 @@ const App = () => {
 
           <Route path="/login" element={<LoginPage onLoginSuccess={handleLoginSuccess} />} />
           <Route path="/register" element={<RegisterPage />} />
-          
+          <Route path="/farmer-dashboard/history" element={
+    isAuthenticated && userRole === 'farmer' ? (
+        <FarmerHistory />
+    ) : (
+        <Navigate to="/login" />
+    )
+} />
           <Route path="/farmer-dashboard" element={
             isAuthenticated && userRole === 'farmer' ? (
               <FarmerDashboard />
