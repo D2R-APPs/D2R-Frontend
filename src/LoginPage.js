@@ -34,11 +34,6 @@ const LoginPage = ({ onLoginSuccess }) => {
             <label>Email</label>
             <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div>
-     
-<div className="auth-page">
-  <div className="auth-container">
-    </div>
-</div>
           <div className="form-group">
             <label>Password</label>
             <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
