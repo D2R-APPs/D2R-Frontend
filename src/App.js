@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
 import FarmerDashboard from './FarmerDashboard';
@@ -42,7 +41,9 @@ const App = () => {
       <Navbar isAuthenticated={isAuthenticated} onLogout={handleLogout} />
       <div className="App-container">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          {/* This route will log out the user automatically */}
+          <Route path="/" element={<HomePage onHomeClick={() => handleLogout()} />} />
+
           <Route path="/login" element={<LoginPage onLoginSuccess={handleLoginSuccess} />} />
           <Route path="/register" element={<RegisterPage />} />
           
