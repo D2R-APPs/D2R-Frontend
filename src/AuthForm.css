@@ -8,11 +8,11 @@
   background: linear-gradient(to bottom right, #f0fdf4, #dcfce7);
 }
 
-.auth-container {
-  background-color: white;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+.auth-form-container { /* or .auth-container, check your HTML class name */
+    background-color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   text-align: center;
   width: 90%;
   max-width: 450px;
