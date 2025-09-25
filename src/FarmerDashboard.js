@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Dashboard.css'; // Import new CSS
+import './Dashboard.css';
+import { Link } from 'react-router-dom';
 
 const FarmerDashboard = () => {
   const [listing, setListing] = useState({
@@ -53,6 +54,7 @@ const FarmerDashboard = () => {
             <option value="kg">kg</option>
             <option value="lbs">lbs</option>
           </select>
+          <Link to="/farmer-dashboard/history">View Inventory History</Link>
           <input type="number" placeholder="Price Per Unit (Rs)" value={listing.pricePerUnit} onChange={(e) => setListing({ ...listing, pricePerUnit: e.target.value })} required />
           <select value={listing.qualityGrade} onChange={(e) => setListing({ ...listing, qualityGrade: e.target.value })}>
             <option value="Surplus">Surplus</option>
