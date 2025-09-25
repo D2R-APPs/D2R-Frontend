@@ -8,7 +8,7 @@ const RestaurantDashboard = () => {
   useEffect(() => {
     const fetchListings = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/inventory');
+        const res = await axios.get('https://d2r-backend-83gd.onrender.com/api/inventory');
         setListings(res.data);
         
         // This is a simple trick to ensure animations run after data is fetched
