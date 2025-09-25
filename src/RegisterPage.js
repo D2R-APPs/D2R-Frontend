@@ -30,13 +30,11 @@ const RegisterPage = () => {
   };
 
   return (
+        <div className="auth-page">
+        <div className="auth-container">
         <h2>Register</h2>
         <form onSubmit={handleRegister}>
           <div className="form-group">
-          <div className="auth-page">
-  <div className="auth-container">
-    </div>
-</div>
             <label>Name</label>
             <input type="text" placeholder="Name" name="name" value={name} onChange={handleChange} required />
           </div>
