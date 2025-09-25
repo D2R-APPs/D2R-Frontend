@@ -12,14 +12,23 @@ const Navbar = ({ isAuthenticated, onLogout }) => {
     navigate('/');
   };
 
+  const handleHomeClick = () => {
+    if (isAuthenticated) {
+      onLogout();
+    }
+    navigate('/');
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <Link to="/" className="navbar-logo">D2R</Link>
+        <Link to="/" onClick={handleHomeClick} className="navbar-logo">D2R</Link>
       </div>
       <div className="navbar-right">
-        <Link to="/" className="nav-link">Home</Link>
+        {/* The Home link will now handle the logout logic */}
+        <Link to="/" onClick={handleHomeClick} className="nav-link">Home</Link>
         
+        {/* Only show Logout button if authenticated */}
         {isAuthenticated ? (
           <button onClick={handleLogoutClick} className="logout-button">Logout</button>
         ) : (
