@@ -7,7 +7,7 @@ const RestaurantDashboard = () => {
 
     const fetchListings = async () => {
         try {
-            const res = await axios.get('http://d2r-backend-83gdonrender.com/api/inventory');
+            const res = await axios.get('https://d2r-backend-83gd.onrender.com/api/inventory');
             setListings(res.data);
             
             // Add a temporary animation fix after fetching data
