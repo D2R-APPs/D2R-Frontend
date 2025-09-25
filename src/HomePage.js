@@ -56,10 +56,12 @@ const HomePage = () => {
         <div className="floating-icon icon-leaf animate-on-scroll">🌿</div>
         <div className="floating-icon icon-utensils animate-on-scroll">🍽️</div>
         <div className="floating-icon icon-corn animate-on-scroll">🌽</div>
+    
         <div className="floating-icon icon-tractor animate-on-scroll">🚜</div>
         <div className="floating-icon icon-onion animate-on-scroll">🧅</div>
         <div className="floating-icon icon-farm animate-on-scroll">🌾</div>
         <div className="floating-icon icon-chicken animate-on-scroll">🐔</div>
+    
         <div className="floating-icon icon-eggplant animate-on-scroll">🍆</div>
         <div className="floating-icon icon-cow animate-on-scroll">🐄</div>
         <div className="floating-icon icon-sunflower animate-on-scroll">🌻</div>
