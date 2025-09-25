@@ -29,7 +29,7 @@ const FarmerDashboard = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5000/api/inventory', listing, {
+      await axios.post('https://d2r-backend-83gd.onrender.com/api/inventory', listing, {
         headers: { 'x-auth-token': token },
       });
       alert('Listing posted successfully!');
