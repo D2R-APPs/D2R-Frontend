@@ -64,7 +64,33 @@
 .animate-on-scroll.delay-2 { transition-delay: 0.2s; }
 .animate-on-scroll.delay-3 { transition-delay: 0.3s; }
 .animate-on-scroll.delay-4 { transition-delay: 0.4s; }
+/* src/HomePage.css */
 
+/* Add these new rules to your existing styles */
+
+.icon-corn {
+  top: 15%;
+  left: 10%;
+  animation-delay: 1s;
+}
+
+.icon-tractor {
+  top: 80%;
+  left: 70%;
+  animation-delay: 1.5s;
+}
+
+.icon-onion {
+  top: 45%;
+  left: 85%;
+  animation-delay: 2s;
+}
+
+.icon-farm {
+  top: 60%;
+  left: 20%;
+  animation-delay: 2.5s;
+}
 /* --- Hero Section --- */
 .hero-section {
   background: linear-gradient(to bottom right, #e0ffe0, #dcfce7);
@@ -118,7 +144,39 @@
   margin: 0 0.5rem;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
+/* src/HomePage.css */
 
+/* Add these new rules to your existing styles */
+
+.icon-chicken {
+  top: 75%;
+  left: 90%;
+  animation-delay: 2.8s;
+}
+
+.icon-eggplant {
+  top: 10%;
+  right: 5%;
+  animation-delay: 3.2s;
+}
+
+.icon-cow {
+  top: 85%;
+  left: 5%;
+  animation-delay: 3.5s;
+}
+
+.icon-sunflower {
+  top: 30%;
+  left: 95%;
+  animation-delay: 4s;
+}
+
+.icon-radish {
+  top: 50%;
+  left: 10%;
+  animation-delay: 4.5s;
+}
 .btn-farmer {
   background-color: #27ae60;
   color: white;
